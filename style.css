@@ -1,0 +1,78 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to top right, rgb(255, 241, 255), rgb(203, 173, 229),rgb(108, 219, 235));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 20px;
+  border:rgba(255, 255, 255, 0.5) 2px solid;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.1), inset 0 0 100px white;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9));
+  border-radius: 50%;
+  box-shadow: inset 10px 0 10px white, inset -5px 0 5px rgb(108, 219, 235, 0.2);
+}
+
+.circle1 {
+  width: 20rem;
+  height: 20rem;
+  top: 5%;
+  left: 50%;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-delay: -5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.circle2{
+  bottom: 5%;
+  right: 10%;
+}
+
+@keyframes bounce {
+  0% {top: 5%}
+  50% {top: 20%}
+  100% {top: 5%}
+}
+
+.fa-heart {
+  color: rgb(255, 255, 255);
+  font-size:20rem;
+  background: -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  text-shadow: 10px 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.heart-1 {
+  top: 25%;
+  left: 5%;
+}
+
+.heart-2 {
+  top: 50%;
+  right: 5%;
+}
