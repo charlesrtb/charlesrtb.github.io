@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 main {
@@ -38,8 +39,8 @@ main {
 .circle1 {
   width: 20rem;
   height: 20rem;
-  top: 5%;
-  left: 50%;
+  right: -10%;
+  top: -10%;
   animation-name: bounce;
   animation-duration: 3s;
   animation-delay: -5s;
@@ -47,37 +48,43 @@ main {
   animation-timing-function: ease-in-out;
 }
 .circle2{
-  bottom: 5%;
-  right: 10%;
+  bottom: -5%;
+  left: -10%;
 }
 
 @keyframes bounce {
-  0% {top: 5%}
-  50% {top: 20%}
-  100% {top: 5%}
+  0% {width: 20rem; height:20rem;}
+  50% {width: 18rem; height:18rem;}
+  100% {width: 20rem; height:20rem;}
 }
 
 .fa-heart {
   color: rgb(255, 255, 255);
-  font-size:20rem;
+  font-size:15rem;
   background: -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  text-shadow: 10px 0 5px rgba(255, 255, 255, 0.3);
+  /* text-shadow: 10px 0 5px rgba(255, 255, 255, 0.3); */
 }
 
 .heart-1 {
-  top: 25%;
-  left: 5%;
+  top: 10%;
+  left: 2%;
 }
 
 .heart-2 {
-  top: 5%;
+  font-size: 10rem;
+  top: 30%;
   right: 5%;
 }
 
 .heart-3 {
   bottom: 50%;
   right: 50%;
+}
+
+.heart-4 {
+  bottom: 5%;
+  left: 10%;
 }
