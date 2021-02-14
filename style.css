@@ -142,16 +142,16 @@ img {
 
 
 .heart-4 {
-  bottom: 5%;
-  left: 10%;
+  bottom: 15%;
+  left: -1%;
 
   animation-duration: 6s;
   animation-delay: -2s;
 }
 
 .heart-5 {
-  bottom: 5%;
-  right: 10%;
+  bottom: -5%;
+  right: -2%;
 
   animation-duration: 3s;
   animation-delay: -10s;
