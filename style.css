@@ -16,31 +16,51 @@ main {
   flex-direction: column;
 }
 
-h2 {
-  padding-bottom: 55px;
+h2, h4 {
+  /* padding-bottom: px; */
   font-family: 'Lemonada', 'verdana', serif;
   font-size: 4rem;
   z-index: 1;
-  background: -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.808), rgba(255, 0, 0, 0.6));
+  background: -webkit-linear-gradient(right, rgba(213, 87, 245, 0.808),rgba(211, 43, 127, 0.5), rgba(255, 0, 0, 0.4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow( 2px 5px 10px rgba(85, 7, 7, 0.61));
 }
 
+h4 {
+  padding-bottom: 40px;
+  font-size: 28px;
+
+}
+
 .glass {
   background: white;
-  height: 65vh;
-  width: 50%;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  height: 95vh;
+  width: 80%;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
   border-radius: 20px;
   border:rgba(255, 255, 255, 0.5) 2px solid;
   z-index: 2;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.1), inset 0 0 100px white;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.slide-container {
+  width: 50%;
+  height: 50vh;
+  background: white;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 20px;
+  border:rgba(255, 255, 255, 0.5) 2px solid;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(114, 39, 39, 0.8), 0px 2px 20px rgba(255, 3, 3, 0.2), inset 0 0 100px white;
 }
 
 .fade {
@@ -120,13 +140,6 @@ img {
   animation-delay: -5s;
 }
 
-.heart-3 {
-  bottom: 50%;
-  right: 50%;
-
-  animation-duration: 3s;
-  animation-delay: -8s;
-}
 
 .heart-4 {
   bottom: 5%;
